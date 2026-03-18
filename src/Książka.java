@@ -18,19 +18,21 @@ public class Książka {
     {
         if(dostepna)
         {
-            dostepna = 1;
+            System.out.println("Pomyślnie wypożyczono książkę: " + tytuł);
+           return dostepna = true;
         }
-        System.out.println("Pomyślnie wypożyczono książkę: " + tytuł);
         else
         {
-            dostepna = 0;
+            System.out.println("Niestety książka: " + tytuł + " jest niedostępna");
+           return dostepna = false;
         }
-        System.out.println("Niestety książka: " + tytuł " jest niedostępna");
+
     }
-    boolean zwrot
-    if(!dostepna)
+    void zwrot(){
+    if(dostepna)
     {
-        dostepna = 1;
+        dostepna = false;
         System.out.println("Książka zwrócona");
+    }
     }
 }
